@@ -1,0 +1,12 @@
+prefix=/home/minglin/workspace/nginx-1.4.1/./libs/openssl-1.0.1e/.openssl
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 1.0.1e
+Requires: 
+Libs: -L${libdir} -lssl -lcrypto
+Libs.private: -ldl
+Cflags: -I${includedir} 
